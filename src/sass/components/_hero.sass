@@ -1,0 +1,300 @@
+.hero
+	padding-bottom: 32px
+	padding-top: 60px
+	+sm
+		padding-top: 13px
+	&__top
+		text-align: center
+	&__title
+		margin-bottom: 50px
+		+sm
+			margin-bottom: 25px
+	&__subtitle
+		margin-bottom: 30px
+		+sm
+			margin-bottom: 15px
+	&__btn
+		max-width: 440px
+		margin: 0 auto 38px
+		letter-spacing: -3.5px  
+		+sm
+			max-width: 220px
+			margin: 0 auto 19px 
+			letter-spacing: -1.5px 
+	&__bottom
+		text-align: center
+		position: relative
+		&:after
+			content: ''
+			position: absolute
+			background: url(../img/border2.png) 
+			width: 100%
+			height: 5px
+			left: 0
+	&__offline
+		color: $darkGrey
+		font-family: $Georgia
+		font-style: italic
+		max-width: 560px
+		margin: 0 auto 50px
+		+sm
+			font-size: 14px 
+			margin: 0 auto 23px
+		.big-text
+			font-size: 30px
+			+sm
+				font-size: 17px
+	&__link
+		display: inline-block
+		background-color: $orange
+		padding: 4px 5px 6px
+		min-width: 385px
+		color: $white
+		font-size: 36px
+		font-weight: 700 
+		margin-bottom: 15px
+		text-decoration: none
+		+sm
+			min-width: 181px
+			font-size: 18px
+			padding: 2px 5px 3px
+			margin-bottom: 10px
+	&__text
+		font-size: 36px
+		color: $darkGrey
+		max-width: 911px
+		margin: 0 auto
+		padding-bottom: 26px
+		+sm
+			font-size: 15px
+			margin-bottom: 13px
+			padding-bottom: 13px
+		
+.content
+	display: flex
+	flex-direction: row
+	margin-bottom: 46px
+	+sm
+		flex-direction: column
+		margin-bottom: 28px
+	&__left
+		background-color: $orange
+		padding: 38px 22px 135px 33px
+		width: 50%
+		+sm
+			padding: 20px 12px 30px 19px 
+			width: 100%
+			order: 1
+	&__date
+		margin-bottom: 54px
+		+sm
+			margin-bottom: 32px
+	&__item-description
+		padding-left: 56px
+		position: relative
+		margin-bottom: 19px
+		font-size: 18px
+		color: $white
+		+sm
+			font-size: 12px
+			margin-bottom: 15px 
+			padding-left: 32px
+		&:after
+			content: ''
+			position: absolute
+			width: 9px
+			height: 9px
+			border-radius: 50%
+			background-color: $white
+			top: 12px
+			left: 30px
+			+sm
+				width: 5px
+				height: 5px
+				left: 15px
+				top: 6px
+	&__right
+		padding: 34px 22px 60px 38px
+		background-color: #eaeaea
+		width: 50%
+		+sm
+			width: 100%
+			padding: 20px 12px 30px 19px 
+	&__title
+		color: $darkGrey
+		font-weight: 700
+		text-transform: uppercase
+		margin-bottom: 56px
+		+sm
+			font-size: 14px
+			margin-bottom: 40px
+	&__item-info
+		padding-left: 42px
+		color: $darkGrey
+		position: relative
+		line-height: 1.2
+		+sm
+			font-size: 12px
+			padding-left: 23px
+		&:not(:last-child)
+			margin-bottom: 31px
+			+sm
+				margin-bottom: 18px
+		&:after
+			content: ''
+			background: url(../img/arrow-list.png) no-repeat
+			position: absolute
+			background-size: contain
+			left: 0
+			width: 27px
+			height: 17px
+			top: 7px
+			+sm
+				width: 13px
+				height: 10px
+		.bold
+			font-weight: 700
+			+sm
+				font-size: 13px
+
+.date
+	display: flex
+	&__left
+		width: 125px
+		margin-right: 35px
+		+sm
+			width: 70px
+			margin-right: 20px
+
+	&__month
+		background-color: $darkGrey
+		color: $white
+		font-size: 22px
+		font-weight: 700
+		padding: 0 10px
+		text-align: center
+		+sm
+			font-size: 12px
+			padding: 0 5px 
+	&__number
+		background-color: $white
+		font-size: 73px
+		font-weight: 700
+		color: $lightgrey
+		text-align: center
+		+sm
+			font-size: 41px 
+	&__right
+		width: calc(100% - 160px)
+		+sm
+			width: calc(100% - 90px)	
+	&__day
+		font-size: 30px
+		font-weight: 700
+		margin-bottom: 4px 
+		font-family: $Circe
+		color: $white
+		text-transform: uppercase
+		+sm
+			font-size: 17px
+	&__date
+		font-size: 36px
+		font-weight: 700
+		color: $white
+		font-family: $Circe
+		text-transform: uppercase
+		position: relative
+		+sm
+			font-size: 20px
+
+	&__line
+		width: 100%
+		height: 6px
+		margin-bottom: 14px
+		background: url(../img/border.png)
+	&__time
+		text-transform: uppercase
+		color: $white
+		+sm
+			font-size: 14px
+		
+.spicker
+	text-align: center
+	&__photo
+		border-radius: 50%
+		border: 5px solid $white
+		max-width: 199px
+		margin: 0 auto 27px
+		+sm
+			max-width: 117px
+			margin: 0 auto 17px
+		img
+			max-width: 100%
+			display: block
+	&__position
+		font-family: Georgia
+		color: $white
+		margin-bottom: 8px
+		font-style: italic
+		+sm
+			font-size: 13px
+	&__name
+		font-weight: 700
+		color: $white
+		margin-bottom: 30px
+		+sm
+			font-size: 13px
+			margin-bottom: 24px
+	
+
+.start
+	text-align: center
+	&__title
+		font-size: 21px
+		font-weight: 700
+		color: $darkGrey
+		text-transform: uppercase 
+		margin-bottom: 14px
+		+sm
+			font-size: 12px
+			margin-bottom: 10px 
+	&__item
+		display: inline-block
+		&:not(:last-child)
+			margin-right: 7px
+			+sm
+				margin-right: 5px
+	&__timer
+		font-size: 0
+		text-align: center
+		margin-bottom: 32px
+		+sm
+			margin-bottom: 23px
+	&__number
+		display: inline-block
+		width: 70px
+		height: 70px
+		line-height: 70px
+		background-color: $darkGrey
+		border-radius: 10px
+		font-size: 48px
+		font-family: $Circe
+		font-weight: 700
+		color: $white
+		margin-bottom: 10px
+		+sm
+			width: 38px
+			height: 38px
+			font-size: 27px
+			line-height: 38px
+	&__text
+		font-family: $Circe
+		font-size: 14px
+		font-weight: 700
+		text-transform: uppercase
+		color: $darkGrey
+		+sm
+			font-size: 10px
+		 
+			
+		  

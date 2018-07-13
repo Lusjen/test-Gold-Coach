@@ -1,0 +1,28 @@
+//FONTS
+=fontpath($name, $name1, $file)
+	src: local($name), local($name1), url("../fonts/" + $file + ".woff2") format("woff2"), url("../fonts/" + $file + ".woff") format("woff")
+=fontdefault($style, $weight, $name)
+	font-family: $name
+	font-style: $style
+	font-weight: $weight
+
+// PT Sans
+@font-face
+	+fontdefault(normal, 400, 'PTSans')
+	+fontpath('PTSans-Regular', 'PTSans-Regular', PTSans-Regular)
+@font-face
+	+fontdefault(normal, 700, 'PTSans')
+	+fontpath('PTSans-Bold', 'PTSans-Bold', PTSans-Bold)
+@font-face
+	+fontdefault(italic, 700, 'PTSans')
+	+fontpath('PTSans-BoldItalic', 'PTSans-BoldItalic', PTSans-BoldItalic)
+
+
+@font-face
+	+fontdefault(normal, 700, 'Circe')
+	+fontpath('Circe-Bold', 'Circe-Bold', Circe-Bold)
+	
+//Georgia
+@font-face
+	+fontdefault(normal, 400, 'Georgia')
+	+fontpath('Georgia', 'Georgia', Georgia)
